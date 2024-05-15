@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --font3: "Sriracha", sans-serif; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* 100% da aultura da tela */
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 50px; /* da um espaço em cima no cabeçario */ 
+    font-variant: small-caps; /* da um destaque para a letra */
+    font-family: var(--font2);
+    font-size: 6vw; /* o tamanho da letra vai ser 6% da largura da tela */
+}
+
+header > p {
+    padding-bottom: 50px; /* da um espaço em baixo no cabeçario */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* tira o sublinhado */
+    font-weight: bolder; /* da um destaque para o link */
+}
+
+a:hover {
+    text-decoration: underline; /* quando passar o mause em cima vira um sublinhado */
+}
+
+section {
+    padding-top: 10vh; /* 10% da aultura da tela */
+    padding-bottom: 10vh; /* 10% da aultura da tela */
+    line-height: 2em; /* da um espaçamento entre as frases */
+    padding-left: 30px; /* coloca as letras mais pra dentro */
+    font-family: var(--font3);
+    font-size: 3vw; /* o tamanho da letra vai ser 3% da largura da tela */
+}
+
+section > p {
+    padding-bottom: 2em; /* dar um espaçamento entre as estrofes com dois paragrafos */
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgba(27, 27, 27, 0.445);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521); /* o <inset> faz uma sombra interna */
+    background-size: cover; /* ajusta a imagem para o menor tamanho possivel*/
+    background-attachment: fixed; /* fixa a imagem para dar o efeito parallax*/
+}
+
+.imagem > p {
+    background-color: rgba(20, 20, 20, 0.568);
+    display: inline-block; /* caixa que se ajusta */
+    padding: 10px; /* espaço dentro da caixa */
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg'); /* colocando a imagem */
+    background-position: right center; /* ajustando a imagem */ 
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
